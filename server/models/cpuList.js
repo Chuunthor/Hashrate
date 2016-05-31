@@ -1,16 +1,16 @@
 var mongoose = require('mongoose');
 
 // Create the MovieSchema.
-var MovieSchema = new mongoose.Schema({
-  title: {
+var cpuSchema = new mongoose.Schema({
+  processor: {
     type: String,
     required: true
   },
-  url: {
+  hashrate: {
     type: String,
     required: true
   }
 });
 
 // Export the model.
-module.exports = mongoose.model('movie', MovieSchema);
+module.exports = mongoose.model('cpu', cpuSchema);
